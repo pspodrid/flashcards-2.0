@@ -8,22 +8,17 @@ $(document).ready(function(){
   let firstPlayer = new Player();
 
   $(".card").click(function() {
-    // $(this).children().children(".front").toggle();
     $(this).children().children().children(".back").show();
-
   });
+
   $(".correctAnswer").click(function() {
     firstPlayer.correctAnswer();
     $(this).parent().parent().parent().remove();
-
-    console.log(this);
-    $(".correctAnswer").hide();
   });
+
   $(".incorrectAnswer").click(function() {
     firstPlayer.incorrectAnswer();
     firstPlayer.protoTimer();
-  });
-  $("alert").click(function() {
   });
 });
 

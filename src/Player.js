@@ -19,10 +19,10 @@ export class Player {
     setTimeout(function() {
     }, 10000);
   }
-  // getRidOf() {
-  //   setTimeout(function(){
-  //   }, 3000);
-  // }
+  getRidOf() {
+    setTimeout(function(){
+    }, 3000);
+  }
   // test() {
   //   $(this).parent().parent().parent().remove();
   // }
